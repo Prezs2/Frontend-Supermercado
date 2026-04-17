@@ -1,8 +1,8 @@
 const Home = () => {
   return (
     <div className="text-center mt-5">
-      <h1 className="display-4">Bienvenido a la SPA CRUD</h1>
-      <p className="lead">Sistema de gestión de Usuarios, Proveedores, Productos y Ventas.</p>
+      <h1 className="display-4">Welcome to the SPA CRUD</h1>
+      <p className="lead">User, Supplier, Product and Sales Management System.</p>
     </div>
   );
 };
