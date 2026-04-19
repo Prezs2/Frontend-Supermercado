@@ -1,26 +1,26 @@
 import api from './api';
 
-export const getusers = async () => {
+export const getUsers = async () => {
   const response = await api.get('/users');
   return response.data;
 };
 
-export const getuserById = async (id) => {
+export const getUserById = async (id) => {
   const response = await api.get(`/user/${id}`);
   return response.data;
 };
 
-export const createuser = async (user) => {
+export const createUser = async (user) => {
   const response = await api.post('/user/create', user);
   return response.data;
 };
 
-export const updateuser = async (id, user) => {
-  const response = await api.put(`/user/update/${id}`, user);
+export const updateUser = async (user) => {
+  const response = await api.put(`/user/update/${user.userid}`, user);
   return response.data;
 };
 
-export const deleteuser = async (id) => {
+export const deleteUser = async (id) => {
   const response = await api.delete(`/user/delete/${id}`);
   return response.data;
 };

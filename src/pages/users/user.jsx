@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
-import { getUsers, createUser, updateUser, deleteUser, } from '../../services/userService'
+import { getUsers, createUser, updateUser, deleteUser } from '../../services/userService'
+
+import UserForm from './userForm'
+import UsersTable from './userTable'
 
 export default function UsersPage() {
   const [users, setUsers] = useState([])
@@ -41,7 +44,7 @@ export default function UsersPage() {
       console.error('Error deleting user:', error)
     }
   }
-
+  
   return (
     <div className="container-fluid mt-4">
       <div className="row g-4">
@@ -54,7 +57,7 @@ export default function UsersPage() {
 
         <div className="col-md-8">
           <UsersTable
-            users={users}
+            users={users.data || []}
             onEdit={setSelectedUser}
             onDelete={handleDelete}
           />

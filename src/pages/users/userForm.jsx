@@ -4,7 +4,7 @@ export default function UserForm({ selectedUser, onSave }) {
   const [form, setForm] = useState({
     name: '',
     email: '',
-    role: '',
+    rol: '',
   })
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function UserForm({ selectedUser, onSave }) {
     setForm({
       name: '',
       email: '',
-      role: '',
+      rol: '',
     })
   }
 
@@ -64,14 +64,14 @@ export default function UserForm({ selectedUser, onSave }) {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Role</label>
+            <label className="form-label">Rol</label>
             <select
               className="form-select"
-              name="role"
-              value={form.role}
+              name="rol"
+              value={form.rol}
               onChange={handleChange}
             >
-              <option value="">Select a role</option>
+              <option value="">Select a rol</option>
               <option value="Administrator">Administrator</option>
               <option value="Seller">Seller</option>
               <option value="Manager">Manager</option>

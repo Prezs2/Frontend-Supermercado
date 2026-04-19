@@ -1,4 +1,5 @@
 export default function UsersTable({ users, onEdit, onDelete }) {
+
   return (
     <div className="card shadow-sm">
       <div className="card-header bg-secondary text-white fw-bold fs-5">
@@ -13,18 +14,18 @@ export default function UsersTable({ users, onEdit, onDelete }) {
                 <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Role</th>
+                <th>Rol</th>
                 <th className="text-center">Actions</th>
               </tr>
             </thead>
 
             <tbody>
               {users.map((user, index) => (
-                <tr key={user.id}>
+                <tr key={user.userid}>
                   <td>{index + 1}</td>
                   <td>{user.name}</td>
                   <td>{user.email}</td>
-                  <td>{user.role}</td>
+                  <td>{user.rol}</td>
                   <td className="text-center">
                     <button
                       className="btn btn-warning btn-sm me-2"
@@ -35,7 +36,7 @@ export default function UsersTable({ users, onEdit, onDelete }) {
 
                     <button
                       className="btn btn-danger btn-sm"
-                      onClick={() => onDelete(user.id)}
+                      onClick={() => onDelete(user.userid)}
                     >
                       Delete
                     </button>
