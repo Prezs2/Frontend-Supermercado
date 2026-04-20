@@ -1,3 +1,18 @@
+# Frontend-Supermercado
+
+## Integrantes
+- Jose Armando Perez Florez
+
+## Descripción de la Arquitectura
+Este proyecto es un frontend para una aplicación de supermercado, desarrollado con tecnologías web modernas. La arquitectura sigue un patrón de componentes reutilizables, utilizando un framework como React para la gestión del estado y la interfaz de usuario. Incluye módulos para la gestión de productos, carrito de compras y autenticación de usuarios, con una separación clara entre la lógica de presentación y la lógica de negocio.
+
+## Instrucciones de Ejecución
+1. Asegúrate de tener Node.js instalado en tu sistema.
+2. Clona o navega al directorio del proyecto: `https://github.com/Prezs2/Frontend-Supermercado.git`.
+3. Instala las dependencias: `npm install`.
+4. Ejecuta la aplicación en modo desarrollo: `npm run dev`.
+5. Abre tu navegador y ve a `http://localhost:5173` para ver la aplicación.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
