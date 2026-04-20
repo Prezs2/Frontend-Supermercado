@@ -5,7 +5,7 @@ import SupplierForm from './supplierForm'
 import SuppliersTable from './supplierTable'
 
 export default function SuppliersPage() {
-  const [Suppliers, setSuppliers] = useState([])
+  const [suppliers, setSuppliers] = useState([])
   const [selectedSupplier, setSelectedSupplier] = useState(null)
 
   const loadSuppliers = async () => {
@@ -13,7 +13,7 @@ export default function SuppliersPage() {
       const data = await getSuppliers()
       setSuppliers(data)
     } catch (error) {
-      console.error('Error loading Suppliers:', error)
+      console.error('Error loading suppliers:', error)
     }
   }
 
@@ -57,7 +57,7 @@ export default function SuppliersPage() {
 
         <div className="col-md-8">
           <SuppliersTable
-            Suppliers={Suppliers.data || []}
+            suppliers={suppliers.data || []}
             onEdit={setSelectedSupplier}
             onDelete={handleDelete}
           />

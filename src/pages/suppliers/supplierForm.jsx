@@ -36,7 +36,7 @@ export default function SupplierForm({ selectedSupplier, onSave }) {
   return (
     <div className="card shadow-sm">
       <div className="card-header bg-primary text-white fw-bold fs-5">
-        Supplier Form
+        Providers Form
       </div>
 
       <div className="card-body">

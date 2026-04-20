@@ -3,7 +3,7 @@ export default function SuppliersTable({ suppliers, onEdit, onDelete }) {
   return (
     <div className="card shadow-sm">
       <div className="card-header bg-secondary text-white fw-bold fs-5">
-        Suppliers List
+        Providers List
       </div>
 
       <div className="card-body p-0">
